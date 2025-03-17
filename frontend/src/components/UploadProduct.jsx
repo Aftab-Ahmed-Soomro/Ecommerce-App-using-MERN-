@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { IoMdClose } from "react-icons/io";
 import productCategory from '../helpers/productCategory';
 import { FaCloudUploadAlt } from "react-icons/fa";
 import uploadImage from '../helpers/uploadImage';
-import DisplayImage from './displayImage';
 import { MdDelete } from "react-icons/md";
 import summaryApi from '../common';
 import {toast} from 'react-toastify'
+import DisplayImage from './displayImage';
 
 const UploadProduct = ({onClose,fetchData}) => {
   const [data, setData] = useState({
@@ -159,7 +159,7 @@ const UploadProduct = ({onClose,fetchData}) => {
                   {
                     data.productImage.map((el,index)=> {   
                       return (
-                        <div className='relative group'>
+                        <div key={index + "elel"} className='relative group'>
                           <img 
                           onClick={()=>{
                             setOpenFullScreenImage(true),
