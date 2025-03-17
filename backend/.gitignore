@@ -1,0 +1,27 @@
+node_modules/
+.env
+config/*.json
+config/*.js
+secrets/
+*.log
+debug.log
+debug/
+.DS_Store
+
+# Optional: Ignore system-specific files
+Thumbs.db
+.idea/
+.vscode/
+
+# Ignore build files (if applicable)
+dist/
+build/
+
+# Ignore MongoDB data files (if stored locally)
+dump/
+*.lock
+
+# Ignore NPM/Yarn/PNPM related lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
