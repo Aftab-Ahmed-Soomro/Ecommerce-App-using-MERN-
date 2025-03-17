@@ -6,7 +6,7 @@ import uploadImage from '../helpers/uploadImage';
 import { MdDelete } from "react-icons/md";
 import summaryApi from '../common';
 import {toast} from 'react-toastify'
-import DisplayImage from './displayImage';
+import DisplayImage from './DisplayImage';
 
 const UploadProduct = ({onClose,fetchData}) => {
   const [data, setData] = useState({

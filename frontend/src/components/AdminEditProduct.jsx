@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
 import { IoMdClose } from "react-icons/io";
 import productCategory from '../helpers/productCategory';
 import { FaCloudUploadAlt } from "react-icons/fa";
 import uploadImage from '../helpers/uploadImage';
-import DisplayImage from './displayImage';
+import DisplayImage from './DisplayImage';
 import { MdDelete } from "react-icons/md";
 import summaryApi from '../common';
 import {toast} from 'react-toastify'
