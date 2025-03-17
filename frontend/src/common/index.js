@@ -1,80 +1,80 @@
-const backendDomain = 'http://localhost:8080'
+// const backendDomain = 'http://localhost:8080'
 
 const summaryApi = {
     signup : {
-        url : `${backendDomain}/api/signup`,
+        url : `${import.meta.env.VITE_BACKEND_URL}/api/signup`,
         method : "post"
     },
     signin : {
-        url : `${backendDomain}/api/signin`,
+        url : `${import.meta.env.VITE_BACKEND_URL}/api/signin`,
         method : "post"
     },
     current_user : {
-        url : `${backendDomain}/api/user-details`,
+        url : `${import.meta.env.VITE_BACKEND_URL}/api/user-details`,
         method : "get"
     },
     logout_user : {
-        url : `${backendDomain}/api/userLogout`,
+        url : `${import.meta.env.VITE_BACKEND_URL}/api/userLogout`,
         method : "get"
     },
     allUser : {
-        url : `${backendDomain}/api/all-user`,
+        url : `${import.meta.env.VITE_BACKEND_URL}/api/all-user`,
         method : "get"
     },
     updateUser : {
-        url : `${backendDomain}/api/update-user`,
+        url : `${import.meta.env.VITE_BACKEND_URL}/api/update-user`,
         method : "post"
     },
     uploadProduct : {
-        url :  `${backendDomain}/api/upload-product`,
+        url :  `${import.meta.env.VITE_BACKEND_URL}/api/upload-product`,
         method : "post"
     },
     allProduct : {
-        url :  `${backendDomain}/api/get-product`,
+        url :  `${import.meta.env.VITE_BACKEND_URL}/api/get-product`,
         method : "get"
     },
     updateProduct : {
-        url :  `${backendDomain}/api/update-product`,
+        url :  `${import.meta.env.VITE_BACKEND_URL}/api/update-product`,
         method : "post"
     },
     categoryProduct : {
-        url : `${backendDomain}/api/get-categoryProduct`,
+        url : `${import.meta.env.VITE_BACKEND_URL}/api/get-categoryProduct`,
         method : 'get'
     },
     categoryWiseProduct : {
-        url : `${backendDomain}/api/category-product`,
+        url : `${import.meta.env.VITE_BACKEND_URL}/api/category-product`,
         method : 'post'
     },
     productDetails : {
-        url : `${backendDomain}/api/product-details`,
+        url : `${import.meta.env.VITE_BACKEND_URL}/api/product-details`,
         method : 'post'
     },
     addToCartProduct : {
-        url : `${backendDomain}/api/addtocart`,
+        url : `${import.meta.env.VITE_BACKEND_URL}/api/addtocart`,
         method : 'post'
     },
     addToCartProductCount : {
-        url : `${backendDomain}/api/countAddToCartProduct`,
+        url : `${import.meta.env.VITE_BACKEND_URL}/api/countAddToCartProduct`,
         method : 'get'
     },
     addToCartProductView : {
-        url : `${backendDomain}/api/view-cart-product`,
+        url : `${import.meta.env.VITE_BACKEND_URL}/api/view-cart-product`,
         method : 'get'
     },
     updateCartProduct : {
-        url : `${backendDomain}/api/update-cart-product`,
+        url : `${import.meta.env.VITE_BACKEND_URL}/api/update-cart-product`,
         method : 'post'
     },
     deleteCartProduct : {
-        url : `${backendDomain}/api/delete-cart-product`,
+        url : `${import.meta.env.VITE_BACKEND_URL}/api/delete-cart-product`,
         method : 'post'
     },
     searchProduct : {
-        url : `${backendDomain}/api/search`,
+        url : `${import.meta.env.VITE_BACKEND_URL}/api/search`,
         method : 'get'
     },
     filterProduct : {
-        url : `${backendDomain}/api/filter-product`,
+        url : `${import.meta.env.VITE_BACKEND_URL}/api/filter-product`,
         method : 'post'
     }
 }
