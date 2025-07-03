@@ -10,7 +10,7 @@ const router = require('./routes');
 
 const app = express();
 app.use(cors({
-    origin : process.env.FRONTEND_URL || "http://localhost:5174",
+    origin : process.env.FRONTEND_URL,
     credentials : true
 }));
 app.use(express.json({ limit: '50mb' }));
@@ -18,7 +18,7 @@ app.use(cookieParser());
 
 app.use("/api",router);
 
-const PORT = process.env.PORT || 8080;  
+const PORT = process.env.PORT ;  
 
 // 1st Approach (easy)
 
