@@ -1,80 +1,80 @@
-// const backendDomain = 'http://localhost:8080'
+export const backendDomain = import.meta.env.VITE_BACKEND_URL
 
 const summaryApi = {
     signup : {
-        url : `${import.meta.env.VITE_BACKEND_URL}/api/signup`,
+        url : `/api/signup`,
         method : "post"
     },
     signin : {
-        url : `${import.meta.env.VITE_BACKEND_URL}/api/signin`,
+        url : `/api/signin`,
         method : "post"
     },
     current_user : {
-        url : `${import.meta.env.VITE_BACKEND_URL}/api/user-details`,
+        url : `/api/user-details`,
         method : "get"
     },
     logout_user : {
-        url : `${import.meta.env.VITE_BACKEND_URL}/api/userLogout`,
+        url : `/api/userLogout`,
         method : "get"
     },
     allUser : {
-        url : `${import.meta.env.VITE_BACKEND_URL}/api/all-user`,
+        url : `/api/all-user`,
         method : "get"
     },
     updateUser : {
-        url : `${import.meta.env.VITE_BACKEND_URL}/api/update-user`,
+        url : `/api/update-user`,
         method : "post"
     },
     uploadProduct : {
-        url :  `${import.meta.env.VITE_BACKEND_URL}/api/upload-product`,
+        url :  `/api/upload-product`,
         method : "post"
     },
     allProduct : {
-        url :  `${import.meta.env.VITE_BACKEND_URL}/api/get-product`,
+        url :  `/api/get-product`,
         method : "get"
     },
     updateProduct : {
-        url :  `${import.meta.env.VITE_BACKEND_URL}/api/update-product`,
+        url :  `/api/update-product`,
         method : "post"
     },
     categoryProduct : {
-        url : `${import.meta.env.VITE_BACKEND_URL}/api/get-categoryProduct`,
+        url : `/api/get-categoryProduct`,
         method : 'get'
     },
     categoryWiseProduct : {
-        url : `${import.meta.env.VITE_BACKEND_URL}/api/category-product`,
+        url : `/api/category-product`,
         method : 'post'
     },
     productDetails : {
-        url : `${import.meta.env.VITE_BACKEND_URL}/api/product-details`,
+        url : `/api/product-details`,
         method : 'post'
     },
     addToCartProduct : {
-        url : `${import.meta.env.VITE_BACKEND_URL}/api/addtocart`,
+        url : `/api/addtocart`,
         method : 'post'
     },
     addToCartProductCount : {
-        url : `${import.meta.env.VITE_BACKEND_URL}/api/countAddToCartProduct`,
+        url : `/api/countAddToCartProduct`,
         method : 'get'
     },
     addToCartProductView : {
-        url : `${import.meta.env.VITE_BACKEND_URL}/api/view-cart-product`,
+        url : `/api/view-cart-product`,
         method : 'get'
     },
     updateCartProduct : {
-        url : `${import.meta.env.VITE_BACKEND_URL}/api/update-cart-product`,
+        url : `/api/update-cart-product`,
         method : 'post'
     },
     deleteCartProduct : {
-        url : `${import.meta.env.VITE_BACKEND_URL}/api/delete-cart-product`,
+        url : `/api/delete-cart-product`,
         method : 'post'
     },
     searchProduct : {
-        url : `${import.meta.env.VITE_BACKEND_URL}/api/search`,
+        url : `/api/search`,
         method : 'get'
     },
     filterProduct : {
-        url : `${import.meta.env.VITE_BACKEND_URL}/api/filter-product`,
+        url : `/api/filter-product`,
         method : 'post'
     }
 }

@@ -23,6 +23,8 @@ const deleteAddToCartProduct = require("../controllers/user/deleteAddToCartProdu
 const searchProduct = require("../controllers/product/searchProduct");
 const filterProductController = require("../controllers/product/filterProduct");
 
+// ************************** User *********************************
+
 // Sign Up
 router.post("/signup",userSignUpController);
 

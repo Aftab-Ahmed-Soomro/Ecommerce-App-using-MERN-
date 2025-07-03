@@ -1,4 +1,4 @@
-// To run this on CLI enter cmdline ---> npm run start
+ // To run this on CLI enter cmdline ---> npm run start
 // console.log("Aftab Bhai");
 
 const express = require('express');
@@ -10,7 +10,7 @@ const router = require('./routes');
 
 const app = express();
 app.use(cors({
-    origin : process.env.FRONTEND_URL || "https://ecommerce-app-using-mern-c8q9.vercel.app/",
+    origin : process.env.FRONTEND_URL || "http://localhost:5173/",
     credentials : true
 }));
 app.use(express.json({ limit: '50mb' }));
