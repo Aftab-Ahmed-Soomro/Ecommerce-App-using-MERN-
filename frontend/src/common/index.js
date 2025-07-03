@@ -2,79 +2,79 @@ export const backendDomain = import.meta.env.VITE_BACKEND_URL
 
 const summaryApi = {
     signup : {
-        url : `/api/signup`,
+        url : `${backendDomain}/api/signup`,
         method : "post"
     },
     signin : {
-        url : `/api/signin`,
+        url : `${backendDomain}/api/signin`,
         method : "post"
     },
     current_user : {
-        url : `/api/user-details`,
+        url : `${backendDomain}/api/user-details`,
         method : "get"
     },
     logout_user : {
-        url : `/api/userLogout`,
+        url : `${backendDomain}/api/userLogout`,
         method : "get"
     },
     allUser : {
-        url : `/api/all-user`,
+        url : `${backendDomain}/api/all-user`,
         method : "get"
     },
     updateUser : {
-        url : `/api/update-user`,
+        url : `${backendDomain}/api/update-user`,
         method : "post"
     },
     uploadProduct : {
-        url :  `/api/upload-product`,
+        url :  `${backendDomain}/api/upload-product`,
         method : "post"
     },
     allProduct : {
-        url :  `/api/get-product`,
+        url :  `${backendDomain}/api/get-product`,
         method : "get"
     },
     updateProduct : {
-        url :  `/api/update-product`,
+        url :  `${backendDomain}/api/update-product`,
         method : "post"
     },
     categoryProduct : {
-        url : `/api/get-categoryProduct`,
+        url : `${backendDomain}/api/get-categoryProduct`,
         method : 'get'
     },
     categoryWiseProduct : {
-        url : `/api/category-product`,
+        url : `${backendDomain}/api/category-product`,
         method : 'post'
     },
     productDetails : {
-        url : `/api/product-details`,
+        url : `${backendDomain}/api/product-details`,
         method : 'post'
     },
     addToCartProduct : {
-        url : `/api/addtocart`,
+        url : `${backendDomain}/api/addtocart`,
         method : 'post'
     },
     addToCartProductCount : {
-        url : `/api/countAddToCartProduct`,
+        url : `${backendDomain}/api/countAddToCartProduct`,
         method : 'get'
     },
     addToCartProductView : {
-        url : `/api/view-cart-product`,
+        url : `${backendDomain}/api/view-cart-product`,
         method : 'get'
     },
     updateCartProduct : {
-        url : `/api/update-cart-product`,
+        url : `${backendDomain}/api/update-cart-product`,
         method : 'post'
     },
     deleteCartProduct : {
-        url : `/api/delete-cart-product`,
+        url : `${backendDomain}/api/delete-cart-product`,
         method : 'post'
     },
     searchProduct : {
-        url : `/api/search`,
+        url : `${backendDomain}/api/search`,
         method : 'get'
     },
     filterProduct : {
-        url : `/api/filter-product`,
+        url : `${backendDomain}/api/filter-product`,
         method : 'post'
     }
 }
